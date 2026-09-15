@@ -1,9 +1,11 @@
 # Outlook 模板邮件工具
 
-[使用说明与 Microsoft 365 配置步骤](使用说明.md)
+Windows Java 桌面工具，直接使用桌面 Outlook 当前配置的账号，无需在程序中再次登录。
 
-- **启动**：Windows 上双击 `Start.bat`，需要 Java 8 或以上。
-- **构建**：安装 JDK 后运行 `Build.bat`。
-- **测试**：运行 `Test.bat`，使用模拟服务，不发送真实邮件。
+- 自定义邮件模板、手动变量和日期函数
+- 收件人及抄送人列表
+- 支持 `Jim zheng<jim_zheng@mail.com>` 显示名称格式
+- 经典 Outlook：直接打开邮件窗口，或经确认后直接发送
+- 新版 Outlook：通过 Windows 默认邮件应用打开编辑窗口
 
-支持模板编辑、手动变量、日期函数、邮件预览、打开 Outlook，以及经确认后通过 Microsoft 365 直接发送。可运行文件为 `OutlookTemplateTool.jar`。
+Windows 上双击 `Start.bat` 启动，需要 Java 8 或以上。具体兼容范围、操作方法和测试说明见 [使用说明](使用说明.md)。

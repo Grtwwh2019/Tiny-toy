@@ -2,7 +2,7 @@ package mailtool;
 
 import java.util.*;
 
-/** Small JSON codec for the fixed Graph protocol and local template documents. */
+/** Small JSON codec for the local Outlook bridge and template documents. */
 final class Json {
     static Map<String,Object> obj(Object... entries) {
         Map<String,Object> m = new LinkedHashMap<>();

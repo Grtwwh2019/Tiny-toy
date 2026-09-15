@@ -2,7 +2,7 @@
 setlocal
 cd /d "%~dp0"
 if exist "runtime\bin\java.exe" (
-  "runtime\bin\java.exe" -Dsun.net.http.retryPost=false -jar "OutlookTemplateTool.jar"
+  "runtime\bin\java.exe" -jar "OutlookTemplateTool.jar"
 ) else (
   java -version >nul 2>&1
   if errorlevel 1 (
@@ -11,7 +11,7 @@ if exist "runtime\bin\java.exe" (
     pause
     exit /b 1
   )
-  java -Dsun.net.http.retryPost=false -jar "OutlookTemplateTool.jar"
+  java -jar "OutlookTemplateTool.jar"
 )
 if errorlevel 1 pause
 endlocal
